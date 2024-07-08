@@ -9,7 +9,7 @@ contenus dans celle-ci<br>
 <?php
                                 //EXERCICE 2 PHP
 
-// Déclarer la constantes (la phrase)
+// Déclarer la constante (la phrase)
  $phrase = "Notre formation DL commence aujourd'hui";
 
 // Appeler la fonction permettant de répondre à la question

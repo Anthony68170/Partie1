@@ -9,7 +9,7 @@
 <?php
                                 //EXERCICE 3 PHP
 
-// Déclarer la constantes (la phrase) puisque à nouveau demander
+// Déclarer la constante (la phrase) puisque à nouveau demander
  $phrase = "Notre formation DL commence aujourd'hui";
 
 // Appeler la fonction permettant de répondre à la question
