@@ -52,24 +52,32 @@ $catCadet = "Cadet";
 $resultat = "";
 
 // DEFINIR l'algorithme en intégrant les variables déclarer au-dessus par des conditions (if, else, while, ...)
-if($ageEnfant >= 6 && $ageEnfant <= 7) {
-    $resultat = $catPoussin;
-}  elseif ($ageEnfant >= 8 && $ageEnfant <= 9) {
-    $resultat = $catPupille;
-   
-}  elseif ($ageEnfant >= 10 && $ageEnfant <= 11) {
-    $resultat = $catMinime;
-    
-}  elseif ($ageEnfant >= 12) {
-    $resultat = $catCadet;
-   
-}
+if(gettype($ageEnfant) == "integer"){
 
+    if($ageEnfant >= 6 && $ageEnfant <= 7) {
+        $resultat = $catPoussin;
+    }  elseif ($ageEnfant >= 8 && $ageEnfant <= 9) {
+        $resultat = $catPupille;
+    
+    }  elseif ($ageEnfant >= 10 && $ageEnfant <= 11) {
+        $resultat = $catMinime;
+        
+    }  elseif ($ageEnfant >= 12) {
+        $resultat = $catCadet;
+   
+    }  
+ 
 //AFFICHER LE RESULTAT MISE SOUS GUILLEMETS AVEC ALT-174 et ALT-175 autour de "Minime"
 $resultat = "«" . $resultat . "»";
 
 //AFFICHER LE RESULTAT
-echo"L’enfant qui a $ageEnfant ans appartient à la catégorie $resultat";
+    echo"L’enfant qui a $ageEnfant ans appartient à la catégorie $resultat<br>";
+
+}  else { ($ageEnfant < 6 && $ageEnfant > 18) ;
+    echo "La catégorie liée à $ageEnfant ans n'est pas gérée.<br>";
+
+}
+
 
                                     // RAISONNEMENTS PRECEDENTS
 
