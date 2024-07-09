@@ -25,10 +25,29 @@ Rendue de monnaie : <br>
 Résultat
 
 Affichage :<br>
-Age : 32<br>
-Sexe : F<br>
-La personne est imposable.<br>
 
 </h2>
 
 <?php
+
+function renduMonnaie($montantAPayer, $montantVerse) {
+    $reste = $montantVerse - $montantAPayer;
+    $billets10 = intdiv($reste, 10);
+    $reste %= 10;
+    $billets5 = intdiv($reste, 5);
+    $reste %= 5;
+    $pieces2 = intdiv($reste, 2);
+    $reste %= 2;
+    $pieces1 = $reste;
+
+    echo "Montant à payer : $montantAPayer €\n";
+    echo "Montant versé : $montantVerse €\n";
+    echo "Reste à payer : " . ($montantVerse - $montantAPayer) . " €\n";
+    echo "Rendu de monnaie : \n";
+    echo "$billets10 billets de 10 € - $billets5 billet de 5 € - $pieces2 pièce de 2 € - $pieces1 pièce de 1 €\n";
+}
+
+renduMonnaie(152, 200);
+
+?>
+ 

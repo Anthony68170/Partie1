@@ -24,10 +24,10 @@ La personne est imposable.<br>
 <?php
 
 // Permettre à l'utilisateur de rentrer/remplacer l'âge
-$age = 32; 
+$age = 18; 
 
 // Permettre à l'utilisateur de rentrer/remplacer le genre par 'homme' ou 'femme'
-$sexe = 'homme';
+$sexe = 'femme';
 
 //
 echo "Affichage :<br>";
