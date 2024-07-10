@@ -30,6 +30,8 @@ Affichage :<br>
 
 <?php
 
+/*
+
 function renduMonnaie($montantAPayer, $montantVerse) {
     $reste = $montantVerse - $montantAPayer;
     $billets10 = intdiv($reste, 10);
@@ -40,14 +42,43 @@ function renduMonnaie($montantAPayer, $montantVerse) {
     $reste %= 2;
     $pieces1 = $reste;
 
-    echo "Montant à payer : $montantAPayer €\n";
-    echo "Montant versé : $montantVerse €\n";
-    echo "Reste à payer : " . ($montantVerse - $montantAPayer) . " €\n";
-    echo "Rendu de monnaie : \n";
-    echo "$billets10 billets de 10 € - $billets5 billet de 5 € - $pieces2 pièce de 2 € - $pieces1 pièce de 1 €\n";
+    echo "<h2>Montant à payer : $montantAPayer €\n</h2>";
+    echo "<h2>Montant versé : $montantVerse €\n</h2>";
+    echo "<h2>Reste à payer : " . ($montantVerse - $montantAPayer) . " €\n</h2>";
+    echo "<h2>Rendu de monnaie : \n</h2>";
+    echo "<h2>$billets10 billets de 10 € - $billets5 billet de 5 € - $pieces2 pièce de 2 € - $pieces1 pièce de 1 €\n</h2></h2>";
 }
 
 renduMonnaie(152, 200);
 
+*/
+
+$montantAPayer = 152;
+$montantVerse = 200;
+$reste = $montantVerse - $montantAPayer;
+
+$nb10 = 0;
+$nb5 = 0;
+$nb2 = 0;
+
+while($reste > 10) {
+    $nb10 ++ ; // +10 +10 +10 = total restant 
+    $reste -= 10; // Le symbole -= signifie soustraire de .... donnant par la suite un total de ....
+    
+}
+
+while($reste > 5) {
+    $nb5 ++ ;
+    $reste -= 5;
+}
+
+while($reste > 2){
+    $nb2++;
+    $reste -= 2;
+} 
+
+echo "<h2>Montant à payer : $montantAPayer €</h2>";
+echo "<h2>Montant versé : $montantVerse €</h2>";
+echo "$nb10 billets de 10 €. $nb5 billet de 5€. $nb2 pièce de 2€. $reste pièce de 1€"
 ?>
  

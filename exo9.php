@@ -30,9 +30,9 @@ $age = 18;
 $sexe = 'femme';
 
 //
-echo "Affichage :<br>";
-echo "Âge : $age <br>";
-echo "Sexe : $sexe <br>";
+echo "<h2>Affichage :<br></h2>";
+echo "<h2>Âge : $age <br></h2>";
+echo "<h2>Sexe : $sexe <br></h2>";
 
 // Vérifier si la personne est imposable 
 $imposable = false;
@@ -41,8 +41,8 @@ if (($sexe == 'femme' && $age >= 18 && $age<= 35) || ($sexe == 'homme' && $age >
 } 
 
 if ($imposable){
-    echo "La personne est imposable. <br>";
-    echo "La personne n'est pas imposable.<br>";
+    echo "<h2>La personne est imposable. <br></h2>";
+    echo "<h2>La personne n'est pas imposable.<br></h2>";
 }
 ?>
 </body>

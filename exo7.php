@@ -40,9 +40,12 @@ $catCadet = "Cadet";
 
 
 // APPELER/DECLARER le résultat
-$resultat = "";
+$resultat = 51;
 
 //$horsCat = (($ageEnfant) <=5);
+
+// $filteredVal = filter_var($resultat, FILTER_SANITIZE_SPECIAL_CHARS);
+// var_dump("la valeur filtered : ".$filteredVal);
 
 // DEFINIR l'algorithme en intégrant les variables déclarer au-dessus par des conditions (if, else, while, ...)
 if(gettype($ageEnfant) == "integer" || "($ageEnfant < 6 && $ageEnfant > 18)"){
