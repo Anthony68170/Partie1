@@ -6,21 +6,21 @@
 <h2>Résultat</h2>
 
 
-<?php
+<?php 
                                 //EXERCICE 3 PHP
 
 // Déclarer la constante (la phrase) puisque à nouveau demander
  $phrase = "Notre formation DL commence aujourd'hui";
 
-
+// Appeler la fonction permettant de répondre à la question
 // Ici la fonction str_replace permet de remplacer le mot "aujourd'hui" par "demain" dans la phrase de l'énnoncé
- $phraseModif = str_replace("aujourd'hui", "demain", $phrase);
+ $PhraseModif = str_replace("aujourd'hui", "demain", $phrase);
 
  
  // Ensuite on fait apparaître la phrase d'origine
  echo "La phrase Notre formation DL commence aujourd’hui.<br>";
  
  // Puis la phrase modifiée
- echo "$phraseModif <br>";
+ echo "$PhraseModif <br>";
 
 ?>
