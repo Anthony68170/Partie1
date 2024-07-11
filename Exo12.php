@@ -34,8 +34,10 @@ function messageAcc($prenom, $language) {
     }
 }
 
+echo "<ul>";
 foreach ($gens as $prenom => $language) {
-    echo messageAcc ($prenom, $language) . "<br>";
+    echo "<li> messageAcc ($prenom, $language) . <br>";
+
 }
 
 ?>
