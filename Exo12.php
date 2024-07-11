@@ -22,20 +22,20 @@ $gens = array (
     "Marie-Claire" => "ENG",
 );
 
-function $messageAcc($prenom, language) {
+function messageAcc($prenom, $language) {
     switch ($language) {
-        case => "FRA":
+        case  "FRA":
             return "Salut" $prenom;
-        case => "FRA":
-            return "Salut" $prenom;
-        case => "FRA":
-            return "Salut" $prenom;
+        case  "ESP":
+            return "Hola" $prenom;
+        case  "ENG":
+            return "Hello" $prenom;
                             
     }
 }
 
 foreach ($gens as $prenom => $language) {
-    echo "$messageAcc ($prenom, $language) . <br>";
+    echo messageAcc ($prenom, $language) . "<br>";
 }
 
 ?>
