@@ -25,11 +25,11 @@ $gens = array (
 function messageAcc($prenom, $language) {
     switch ($language) {
         case  "FRA":
-            return "Salut" $prenom;
+            return "Salut $prenom";
         case  "ESP":
-            return "Hola" $prenom;
+            return "Hola $prenom";
         case  "ENG":
-            return "Hello" $prenom;
+            return "Hello $prenom";
                             
     }
 }
