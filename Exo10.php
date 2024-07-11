@@ -67,7 +67,7 @@ while($reste > 10) {
     
 }
 
-while($reste > 5) {
+if($reste > 5) {
     $nb5 ++ ;
     $reste -= 5;
 }

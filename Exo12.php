@@ -16,6 +16,27 @@
 
 <?php
 
+$gens = array (
+    "Mickael" => "FRA",
+    "Virgile" => "ESP",
+    "Marie-Claire" => "ENG",
+);
+
+function $messageAcc($prenom, language) {
+    switch ($language) {
+        case => "FRA":
+            return "Salut" $prenom;
+        case => "FRA":
+            return "Salut" $prenom;
+        case => "FRA":
+            return "Salut" $prenom;
+                            
+    }
+}
+
+foreach ($gens as $prenom => $language) {
+    echo "$messageAcc ($prenom, $language) . <br>";
+}
 
 ?>
 

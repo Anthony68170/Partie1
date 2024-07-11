@@ -43,7 +43,7 @@ while($i < $nbmarques) {
     
 // EXECUTER une boucle avec "foreach" (3eme solution)
 echo"<h2>Solution avec foreach</h2>";
-foreach ($marques as $marques) {
+foreach ($marques as $marque) {
     echo $marques. "<br>";
 }
 
